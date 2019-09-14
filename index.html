@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+		<h2>First</h2>
+		<form>
+			<label for="firstname">Enter firstname</label>
+			<br>
+			<input id="firstname" type="text">
+			<br>
+			<label for="objId">Enter id</label>
+			<br>
+			<input id="objId" type="text">
+			<br>
+			<label for="avmark">Enter average mark</label>
+			<br>
+			<input id="avmark" type="text">
+		</form>
+		<span id="get"></span>
+	</div>
+	<div>
+		<h2>Second</h2>
+		<form>
+			<label for="firstname1">Enter firstname</label>
+			<br>
+			<input id="firstname1" type="text">
+			<br>
+			<label for="objId1">Enter id</label>
+			<br>
+			<input id="objId1" type="text">
+			<br>
+			<label for="avmark1">Enter average mark</label>
+			<br>
+			<input id="avmark1" type="text">
+		</form>
+		<span id="get1"></span>
+	</div>
+	<div>
+		<h3>Third</h3>
+		<form>
+			<label for="firstname2">Enter firstname</label>
+			<br>
+			<input id="firstname2" type="text">
+			<br>
+			<label for="objId2">Enter id</label>
+			<br>
+			<input id="objId2" type="text">
+			<br>
+			<label for="avmark2">Enter average mark</label>
+			<br>
+			<input id="avmark2" type="text">
+		</form>
+		<span id="get2"></span>
+	</div>
+		<input id="buttAll" type="button" name="">
+	<script type="text/javascript">
+   		buttAll.onclick = function() {
+   			var firstname = document.querySelector('#firstname').value;
+   			var objId = document.querySelector('#objId').value;
+   			var avmark = document.querySelector('#avmark').value;
+   			var marks = [firstname, objId, avmark];
+   			console.log(marks);
+   			var firstname1 = document.querySelector('#firstname1').value;
+   			var objId1 = document.querySelector('#objId1').value;
+   			var avmark1 = document.querySelector('#avmark1').value;
+   			var marks1 = [firstname1, objId1, avmark1];
+   			console.log(marks1);
+   			var firstname2 = document.querySelector('#firstname2').value;
+   			var objId2 = document.querySelector('#objId2').value;
+   			var avmark2 = document.querySelector('#avmark2').value;
+   			var marks2 = [firstname2, objId2, avmark2];
+   			console.log(marks2);
+
+   			var allAvMark = [avmark, avmark1, avmark2];
+   			var allstudents = [marks, marks1, marks2];
+   			console.log(allAvMark);
+   			console.log(allstudents);
+   			console.log(allAvMark.sort());
+   			alert(allAvMark.sort());
+
+   		};
+	</script>
+</body>
+</html>
